@@ -1,0 +1,784 @@
+/* de css code voor de website */
+body{
+    background-color: #f0f0f0;
+}
+
+/* HEADER */
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px 30px;
+}
+
+.logo img{
+    height: 30%;
+    width: 30%;
+    margin: 0;
+    margin-top: 0.5%;
+    margin-left: 1.5%;
+    margin-right: 10%;
+}
+
+.nav-links {
+    position: absolute;
+    left: 85%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: 3%;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    margin-top: 4px;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    inset: 0;  
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+}
+
+.text {
+    position: absolute;
+    width: 70%;
+    top: 60%;
+    left: 10%;
+    z-index: 3;
+    color: white;
+    text-align: left;
+
+}
+
+.text h2 {
+    font-size: 2em;
+
+}
+
+.text p {
+    position: absolute;
+    width: 45%;
+    top: 45%;
+    left: 60%;
+    font-size: 1.1em;  
+    opacity: 0.9;
+}
+
+.text button {
+    background-color: #ffffff;
+    color: #0d1422;
+    border: none;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.text button:hover {
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    color: #0d1422;
+}
+
+.about-company{
+    padding: 5% 15%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.about-company h3{
+    font-size: 1.8em;
+}
+
+.text-2 {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+
+}
+
+.text-2 .button2 {
+    background-color: #ffffff;
+    color: #0d1422;
+    border: 2px solid #0d1422;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;     
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.text-2 .button2:hover {
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    color: #0d1422;
+}
+
+.faq-section {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.faq-text h3 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.faq-text p {
+    font-size: 1.1em;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.faq-button {
+    background-color: #ffffff;
+    color: #0d1422;
+    border: 2px solid #0d1422;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-button:hover {
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    color: #0d1422;
+}
+
+section div.part1{
+    height: 20%;
+
+}
+
+.Foto1{
+    float: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 47.5%;
+    width: 47.5%;
+}
+
+.Foto2P{
+    float: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    height: 47.5%;
+    width: 47.5%;
+}
+
+section div h2{ 
+    font-size: 2.5em;
+    float: left;
+    padding-left: 0.5%;
+    margin-left: 2%;
+    margin-top: 7.5%;
+    padding-bottom: 1%;
+    width: 45%;
+    font-weight: bold;
+}
+
+section div p.p1{
+    font-size: 1.4em;
+    float: left;
+    padding-left: 0.5%;
+    margin-left: 2%;
+    margin-top: -0.5%;
+    width: 45%;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+}
+
+section div p.p2{
+    font-size: 1.4em;
+    float: left;
+    padding-left: 0.5%;
+    margin-left: 2%;
+    margin-top: -1.0%;
+    padding-top: 1%;
+    width: 45%;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+}
+
+section div p a{
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* SECTION FORM */
+.form {
+    width: 75%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(90deg, #D8D04A, #559B76);
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    padding-inline: 1em;
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    outline: 1px solid black;
+    transition: all ease-in-out 0.5s;
+}
+
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.5s;
+    background: linear-gradient(90deg, #D8D04A, #559B76);
+    color: black;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+}
+
+.form-card1 {
+    background: linear-gradient(90deg, white, white);
+    border-radius: 22px;
+    transition: all 0.3s;
+}
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+/* SECTION INFO */
+section h1.title{
+    margin-top: 5%;
+    text-align: center;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section p.head{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon1 {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/pc-display.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/pc-display.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.icon2 {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/laptop.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/laptop.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.icon3 {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/file-earmark.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/file-earmark.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.icon4 {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/balloon-heart.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/balloon-heart.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.icon5 {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/leaf.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/icons/leaf.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding: 2%;
+}
+.card 
+{
+    width: 190px;
+    height: 254px;
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    border-radius: 20px;
+    transition: all .3s;
+    margin-top: 3%;
+    float: left;
+}
+
+.card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+/* FOOTER */
+.site-footer{
+    background: #0d1422;
+    color: #f0f0f0;
+    padding: 30px 16px 5px 16px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+.footer-brand a {
+text-decoration: none;
+}
+.brand{
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #f0f0f0;
+}
+.brand:hover {
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tagline{
+    margin-top: 8px;
+    color: #f0f0f0;
+    font-size: 0.95rem;
+    max-width: 360px;
+}
+.footer-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav li{
+    margin: 6px 0;
+}
+.footer-nav a{
+    color: #9aa7b1;
+    text-decoration: none;
+    font-size: .98rem;
+}
+.footer-nav a:hover{
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+.footer-contact p{
+    color: #9aa7b1;
+    margin: 6px 0;
+    font-size: .95rem;
+}
+.footer-contact a{
+    color: #9aa7b1;
+    text-decoration: none;
+    
+}
+.footer-contact a:hover{
+    background: linear-gradient(90deg, #F4E300, #00A775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+.footer-social .icon-row{
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+}
+.footer-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: transform .12s ease, background .12s ease;
+}
+.footer-social a:hover{
+    transform: translateY(-4px);
+    background: linear-gradient(90deg, #F4E300, #00A775);
+}
+.footer-bottom{
+    margin-top: 28px;
+    padding-top: 18px;
+    padding-bottom: 0;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.footer-bottom p{
+    color: #9aa7b1;
+    text-decoration: none;
+    font-size: .98rem;
+}
+
+.mission-section {
+    padding: 6% 10% 3% 10%;
+    background-color: #ffffff;
+}
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+.mission-text {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+.mission-text h3 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: #0d1422;
+}
+.mission-text p {
+    font-size: 1.1em;
+    color: #333333;
+}
+.mission-image {
+    flex: 1 1 500px;
+    min-width: 280px;
+}
+.mission-image img {
+    width: 100%;
+    height: auto; 
+    max-height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.services-section {
+    padding: 3% 5% 6% 5%; 
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.services-container h3 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2%; 
+    flex-wrap: wrap;
+}
+.service-card {
+    background-color: white;
+    width: 250px;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.service-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #F4E300, #00A775); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
+}
+.service-card p {
+    font-size: 1em;
+    color: #555555;
+}
+
+.cta-section {
+    padding: 6% 5%;
+    background: linear-gradient(135deg, #F4E300, #00A775); 
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: 5% 10%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.cta-container h3 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+.cta-container p {
+    font-size: 1.1em;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-button {
+    background-color: #ffffff;
+    color: #00A775;
+    padding: 0.8rem 2.2rem; 
+    font-size: 1em; 
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #F4E300;
+    color: #0d1422;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+
+
+
+.contact-section {
+  width: 100%;
+  padding: 100px 60px;
+  background: linear-gradient(90deg, #F4E300, #00A775);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d1422;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Contact info section --- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0d1422;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: #0d1422;
+}
+
+/* --- Form section --- */
+.contact-form {
+  background-color: #dddcdc;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #0d1422;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  color: #0d1422;
+  background-color: #ffffff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00A775;
+  box-shadow: 0 0 0 2px rgba(0, 167, 117, 0.3);
+}
+
+/* --- Submit button --- */
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(90deg, #F4E300, #00A775);
+  color: #0d1422;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #00A775, #F4E300);
+  color: #0d1422;
+  transform: translateY(-2px);
+}
